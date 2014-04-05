@@ -8,6 +8,9 @@ angular.module('riverMoss.promises').controller('PromisesController', ['$scope',
         },
         {
             template: '/promises/templates/all-promises.tpl.html'
+        },
+        {
+            template: '/servicesTopic/templates/d3-example.tpl.html'
         }
     ];
 

@@ -46,6 +46,11 @@ footer p {
     width: 90%;
 }
 
+.slide-container {
+    overflow: hidden;
+    width: 100%;
+}
+
 .slide-animate.ng-enter, .slide-animate.ng-leave {
     -webkit-transition: 300ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
     -moz-transition: 300ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
