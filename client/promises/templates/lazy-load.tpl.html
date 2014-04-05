@@ -2,9 +2,11 @@
 
     <div class="row">
         <div class="col-md-6">
-            <h4>Books on Angular</h4>
-            <div class="row" ng-repeat="book in books">
-                <div class="col-md-12">{{ book }}</div>
+            <h3>Books on Angular</h3>
+            <div class="row">
+                <div class="col-md-12">
+                    <h4  ng-repeat="book in books" ng-class="{'text-info': $index === 0, 'text-success': $index === 1, 'text-danger': $index === 2, 'text-warning': $index === 3 }">{{ book }}</h4>
+                </div>
             </div>
             <div hljs include="'../../promises/controllers/lazyLoad.js'"></div>
             <div hljs include="'../../promises/services/books.js'"></div>

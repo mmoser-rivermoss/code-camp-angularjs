@@ -1,4 +1,4 @@
-angular.module('riverMoss.promises').factory('Books', ['$http', '$q', function($http, $q) {
+angular.module('riverMoss.promises').factory('Books', ['$http', '$q', '$timeout', function($http, $q, $timeout) {
     var books = null;
 
     function get() {
@@ -10,7 +10,9 @@ angular.module('riverMoss.promises').factory('Books', ['$http', '$q', function($
         $http.get('/books').then(
             function(response) {
                books = response.data;
-               deferred.resolve(books);
+               $timeout(function() {
+                   deferred.resolve(books);
+               }, 1000);
             },
             function() {
                 deferred.reject();

@@ -1,9 +1,9 @@
 exports.list = function(req, res) {
     var books = [
         'Mastering Web Application Development with AngularJS',
-        'ng-book',
-        'AngularJS',
-        'Directives'
+        'AngularJS Directives',
+        'ng-book - The Complete Book on AngularJS',
+        'AngularJS'
     ];
 
     res.jsonp(books);
