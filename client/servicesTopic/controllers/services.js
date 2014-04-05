@@ -20,6 +20,9 @@ angular.module('riverMoss.services-topic').controller('ServicesController', ['$s
         },
         {
             template: '/servicesTopic/templates/notifications.tpl.html'
+        },
+        {
+            template: '/servicesTopic/templates/d3-example.tpl.html'
         }
     ];
 

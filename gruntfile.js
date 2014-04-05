@@ -89,10 +89,12 @@ module.exports = function(grunt) {
                         'client/servicesTopic/controllers/factory.js',
                         'client/servicesTopic/controllers/provider.js',
                         'client/servicesTopic/controllers/notificationsExample.js',
+                        'client/servicesTopic/controllers/d3-example.js',
                         'client/servicesTopic/services/characters.js',
                         'client/servicesTopic/services/characterService.js',
                         'client/servicesTopic/services/characterFactory.js',
                         'client/servicesTopic/services/characterProvider.js',
+                        'client/servicesTopic/services/d3.js',
 
                         // Directives Topic
                         'client/directivesTopic/module.js',
