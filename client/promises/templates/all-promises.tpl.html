@@ -1,0 +1,30 @@
+<section ng-controller="AllPromisesController" ng-init="initialize()">
+
+    <div class="row">
+        <div class="col-md-6">
+            <h3>Books on Angular</h3>
+            <div class="row">
+                <div class="col-md-12">
+                    <h4  ng-repeat="book in books" ng-class="{'text-info': $index === 0, 'text-success': $index === 1, 'text-danger': $index === 2, 'text-warning': $index === 3 }">
+                        {{ book }}
+                    </h4>
+                </div>
+            </div>
+            <h3>Permissions</h3>
+            <div class="row">
+                <div class="col-md-12">
+                    <h4  ng-repeat="permission in permissions" ng-class="{'text-danger': !permission.authorized, 'text-success': permission.authorized}">
+                        {{ permission.name }}
+                    </h4>
+                </div>
+            </div>
+            <div hljs include="'../../promises/controllers/all-promises.js'"></div>
+            <div hljs include="'../../promises/services/books.js'"></div>
+            <div hljs include="'../../promises/services/permissions.js'"></div>
+        </div>
+        <div class="col-md-6">
+            <div hljs include="'../../promises/templates/all-promises.tpl.html'"></div>
+        </div>
+    </div>
+
+</section>

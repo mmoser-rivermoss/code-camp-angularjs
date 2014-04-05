@@ -5,6 +5,9 @@ angular.module('riverMoss.promises').controller('PromisesController', ['$scope',
         },
         {
             template: '/promises/templates/lazy-load.tpl.html'
+        },
+        {
+            template: '/promises/templates/all-promises.tpl.html'
         }
     ];
 

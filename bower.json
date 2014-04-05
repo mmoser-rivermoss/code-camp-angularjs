@@ -11,5 +11,8 @@
     "angular-bootstrap": "0.10.0",
     "angular-ui-router": "#master",
     "angular-highlightjs": "~0.2.5"
+  },
+  "resolutions": {
+    "angular": "1.2.14"
   }
 }

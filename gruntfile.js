@@ -44,8 +44,8 @@ module.exports = function(grunt) {
         uglify: {
             options: {
                 banner: '/*! <%= pkg.name %> <%= grunt.template.today("dd-mm-yyyy") %> */\n',
-                beautify: true,
-                mangle: false
+                beautify: false,
+                mangle: true
             },
             dist: {
                 files: {
@@ -117,7 +117,9 @@ module.exports = function(grunt) {
                         'client/promises/module.js',
                         'client/promises/controllers/promises.js',
                         'client/promises/controllers/lazyLoad.js',
+                        'client/promises/controllers/all-promises.js',
                         'client/promises/services/books.js',
+                        'client/promises/services/permissions.js',
 
                         'client/controllers/header.js',
                         'client/init.js'
