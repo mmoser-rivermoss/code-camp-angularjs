@@ -1,5 +1,4 @@
 # code-camp-angularjs
-===================
 
 This repo is for the Code Camp sessions on AngularJS.
 
