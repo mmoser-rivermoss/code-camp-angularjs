@@ -1,0 +1,6 @@
+/.hg
+/.hgignore
+/.idea
+/bower_components
+/node_modules
+/client/lib

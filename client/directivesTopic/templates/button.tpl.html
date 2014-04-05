@@ -1,0 +1,51 @@
+<section ng-controller="ButtonController">
+    <div class="text-center">
+        <h3>
+            Let's take a look at some examples of what we are trying to replace
+        </h3>
+    </div>
+    <div class="row">&nbsp;</div>
+    <div class="row">
+        <div class="col-md-6">
+            <button ng-click="showPrimary=true">Standard</button>
+        </div>
+        <div class="col-md-6">
+            <div hljs>
+<button class="btn">Standard</button>
+            </div>
+        </div>
+    </div>
+    <div class="row">&nbsp;</div>
+
+    <div  class="row" ng-show="showPrimary">
+        <div class="col-md-6">
+            <button type="submit" ng-click="showSuccess=true">Primary</button>
+        </div>
+        <div class="col-md-6">
+            <div hljs>
+<button class="btn btn-primary" type="submit">Submit</button>
+            </div>
+        </div>
+    </div>
+    <div class="row">&nbsp;</div>
+    <div class="row" ng-show="showSuccess">
+        <div class="col-md-6">
+            <button button-type="success" ng-click="showSmall=true">Success</button>
+        </div>
+        <div class="col-md-6">
+            <div hljs>
+<button class="btn btn-success">Success</button>
+            </div>
+        </div>
+    </div>
+    <div  class="row" ng-show="showSmall">
+        <div class="col-md-6">
+            <button button-type="warning" size="sm">Warning Small</button>
+        </div>
+        <div class="col-md-6">
+            <div hljs>
+<button class="btn btn-warning btn-sm">Warning Small</button>
+            </div>
+        </div>
+    </div>
+</section>

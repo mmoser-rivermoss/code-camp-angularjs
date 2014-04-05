@@ -1,0 +1,21 @@
+<div class="row" ng-controller="NgShowController">
+    <div class="col-md-4">
+        <div hljs include="'../../greeting/controllers/ngShow.js'"></div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="row alert-success" ng-show="!hideOne">Row 1</div>
+                <div class="row alert-info" ng-hide="hideTwo">Row 2</div>
+                <div class="row alert-warning" ng-if="!hideThree">Row 3</div>
+            </div>
+            <div class="col-md-6">
+                <button button-type="success" ng-click="toggleOne()">Toggle Row 1</button>
+                <button button-type="info" ng-click="hideTwo = !hideTwo">Toggle Row 2</button>
+                <button button-type="warning" ng-click="hideThree = !hideThree">Toggle Row 3</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-8">
+        <div hljs include="'../../greeting/templates/ng-show.tpl.html'"></div>
+    </div>
+</div>
+

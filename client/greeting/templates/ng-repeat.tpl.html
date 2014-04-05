@@ -1,0 +1,23 @@
+<section ng-controller="NgRepeatController">
+    <div class="row">
+        <div class="col-md-6">
+            <div hljs include="'../../greeting/controllers/ngRepeat.js'"></div>
+            <div class="well">
+                <div class="row">
+                    <div class="col-md-6">
+                        <input type="text" ng-model="name" class="form-control">
+                    </div>
+                    <div class="col-md-2">
+                        <button type="submit" ng-click="add()">Add Name</button>
+                    </div>
+                </div>
+                <div class="row" ng-repeat="item in items | orderBy:'name'">
+                    <div class="col-lg-12">{{ item.name }}</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div hljs include="'../../greeting/templates/ng-repeat.tpl.html'"></div>
+        </div>
+    </div>
+</section>

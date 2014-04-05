@@ -1,0 +1,39 @@
+<section>
+    <div class="row">
+        <div class="col-md-6">
+            <h4><code>module.value</code></h4>
+        </div>
+        <div class="col-md-6">
+            <h4>No dependency injection. The object that you give it is the object that you get when injecting into others.</h4>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <h4><code>module.service</code></h4>
+        </div>
+        <div class="col-md-6">
+            <h4>Dependency injection allowed. It will <code>new</code> up the function that you give it.</h4>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <h4><code>module.factory</code></h4>
+        </div>
+        <div class="col-md-6">
+            <h4>Dependency injection allowed. You will get back the service that the factory function returns.
+                This allows you to determine which service to return if you'd like. Hence the word factory, but 99%
+                of the time it isn't used this way.
+            </h4>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <h4><code>module.provider</code></h4>
+        </div>
+        <div class="col-md-6">
+            <h4>Dependency injection allowed. The service will be what the <code>$get</code> function returns. It allows
+                for configuration at <code>config</code> time to set up whatever is needed for the service.
+            </h4>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,17 @@
+<section>
+    Create Module:
+    <div hljs>
+angular.module('riverMoss.modules', []);
+    </div>
+    Get Module:
+    <div hljs>
+// Notice there are no brackets
+angular.module('riverMoss.modules').controller(...);
+    </div>
+    Example of a module using dependencies
+    <div hljs>
+angular.module('riverMoss', ['ngCookies', 'ngResource', 'ui.bootstrap', 'ui.router',
+'riverMoss.system', 'riverMoss.directives', 'riverMoss.modules',
+'riverMoss.slides', 'hljs']);
+    </div>
+</section>

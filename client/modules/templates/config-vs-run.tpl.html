@@ -1,0 +1,34 @@
+<section>
+    <div class="row">
+        <div class="col-md-6">
+            <h4>Only Providers and constants can be injected into <code>config</code></h4>
+            <div hljs>
+angular.module('myModule').config(['AProvider', 'BProvider', ... , function(AProvider, BProvider, ...) {
+    // Do Something
+}]);
+            </div>
+            <div class="alert alert-info">
+                <h4>
+                    Angular will apply constants first, then it applies the configs which is why we can inject constants as well.
+                </h4>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <h4>Only instances and constants can be injected into <code>run</code></h4>
+            <div hljs>
+angular.module('myModule').run(['AService', 'BService', ...
+  , function(AService, BService, ...) {
+    // Do Something
+}]);
+            </div>
+            <div class="alert alert-info">
+                <h4>Run Blocks get executed after the <code>$injector</code> service is created</h4>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-offset-3 col-md-6">
+            <h4 class="text-danger">You can have as many configs and runs as you'd like</h4>
+        </div>
+    </div>
+</section>

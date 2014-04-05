@@ -1,0 +1,39 @@
+<section ng-controller="EmitListenerController">
+    <h3>Eventing</h3>
+    <ul>
+        <li><code>$emit</code> - Broadcasts event <strong>UP</strong> through the scope hierarchy</li>
+        <li><code>$broadcast</code> - Broadcasts event <strong>DOWN</strong> through the scope hierarchy</li>
+        <li><code>$on</code> - Listens for the event</li>
+    </ul>
+    <div class="row">
+        <div class="col-md-3">
+            Emitted Data: <span class="alert-success">{{ emittedData }}</span>
+        </div>
+        <div ng-controller="EventingController">
+            <div class="col-md-3">
+                <input ng-model="event.data" class="form-control" />
+            </div>
+            <div class="col-md-3">
+                <button button-type="success" ng-click="emit()">Emit</button>
+                <button button-type="info" ng-click="broadcast()">Broadcast</button>
+            </div>
+            <div class="col-md-3" ng-controller="BroadcastListenerController">
+                Broadcasted Data: <span class="alert-info">{{ broadcastedData }}</span>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        &nbsp;
+    </div>
+</section>
+<div class="row">
+    <div class="col-md-6">
+        <div hljs include="'../../scope/controllers/broadcastListener.js'"></div>
+        <div hljs include="'../../scope/controllers/emitListener.js'"></div>
+        <div hljs include="'../../scope/controllers/eventing.js'"></div>
+    </div>
+    <div class="col-md-6">
+        <div hljs include="'../../scope/templates/eventing.tpl.html'"></div>
+    </div>
+</div>
+

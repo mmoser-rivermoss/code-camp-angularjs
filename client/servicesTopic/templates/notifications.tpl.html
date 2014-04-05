@@ -1,0 +1,26 @@
+<section ng-controller="NotificationsExampleController">
+    <div class="row">
+        <div class="col-md-3">
+            <div ng-controller="NotificationController">
+                <alert ng-repeat="notification in notificationsService.messages" type="notification.type" close="notificationsService.close()">{{ notification.message }}</alert>
+
+                <h4>Stack:</h4>
+                <alert ng-repeat="notification in notificationsService.getStack()" type="notification.type" close="notificationsService.removeFromStack(notification)">{{ notification.message }}</alert>
+            </div>
+            <div class="row">
+                <div class="col-xs-9">
+                    <input type="text" class="form-control" ng-model="message">
+                </div>
+                <div class="col-xs-3">
+                    <button type="submit" ng-click="add($event)">Add</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-9">
+            <div  hljs include="'../../notifications/controllers/notification.js'"></div>
+            <div  hljs include="'../../servicesTopic/controllers/notificationsExample.js'"></div>
+            <div  hljs include="'../../notifications/services/notifications.js'"></div>
+            <div  hljs include="'../../servicesTopic/templates/notifications.tpl.html'"></div>
+        </div>
+    </div>
+</section>

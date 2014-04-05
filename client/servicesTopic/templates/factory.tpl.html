@@ -1,0 +1,18 @@
+<section ng-controller="FactoryController">
+    <div class="col-md-6">
+        <h4>The service that is created from a <code>factory</code> is the one that the factory returns </h4>
+        <div hljs include="'../../servicesTopic/services/characterFactory.js'"></div>
+        <div hljs include="'../../servicesTopic/controllers/factory.js'"></div>
+    </div>
+    <div class="col-md-6">
+        <div hljs include="'../../servicesTopic/templates/factory.tpl.html'"></div>
+        <section ng-controller="ValuesController">
+            <select ng-model="selectedCharacter" ng-options="character.name for character in characterService.characters"></select>
+            <div class="row">
+                <div class="col-md-12">
+                    <img src="{{selectedCharacter.image}}">
+                </div>
+            </div>
+        </section>
+    </div>
+</section>

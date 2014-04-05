@@ -1,0 +1,27 @@
+<div class="row" ng-controller="HelloGalaxyController">
+    <div class="col-md-5">
+        <div hljs include="'../../scope/controllers/helloGalaxy.js'"></div>
+        <div hljs include="'../../scope/controllers/ruleOfThumb.js'"></div>
+        <div class="row text-left">
+            <div class="col-md-12">
+                As a rule of thumb, anything with ng-model should have a dot notation.
+                Example, <code>ng-model="state.name"</code>
+            </div>
+        </div>
+        <div class="row">
+            &nbsp;
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                Hello <span class="alert-success">{{ greeting.name }}</span>
+            </div>
+        </div>
+        <div ng-controller="RuleOfThumbController">
+            <input class="form-control" ng-model="greeting.name">
+            This is the new greeting: <span class="alert-success">{{ greeting.name }}</span>
+        </div>
+    </div>
+    <div class="col-md-7">
+        <div hljs include="'../../scope/templates/proper-ng-model.tpl.html'"></div>
+    </div>
+</div>

@@ -1,0 +1,18 @@
+<section ng-controller="HelloWorldController">
+    <div class="row">
+        <div class="col-md-5">
+            <div hljs include="'../../greeting/controllers/helloWorld.js'"></div>
+            <div class="row">
+                <div class="col-md-6">
+                    <input type="text" ng-model="greeting" class="form-control">
+                </div>
+                <div class="col-md-4">
+                    Hello {{ greeting }}
+                </div>
+            </div>
+        </div>
+        <div class="col-md-7">
+            <div hljs include="'../../greeting/templates/hello-World.tpl.html'"></div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,14 @@
+<section ng-controller="NgSwitchController">
+    <div class="col-md-6">
+        <div hljs include="'../../greeting/controllers/ngSwitch.js'"></div>
+        <select ng-model="character" ng-options="character for character in characters"></select>
+        <div ng-switch on="character">
+            <img ng-switch-when="bart" src="../../img/bart.jpg">
+            <img ng-switch-when="sheldon" src="../../img/sheldon.jpg">
+            <img ng-switch-when="luke" src="../../img/luke.jpg">
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div hljs include="'../../greeting/templates/ng-switch.tpl.html'"></div>
+    </div>
+</section>

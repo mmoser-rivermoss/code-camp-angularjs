@@ -1,0 +1,16 @@
+<section ng-controller="ServiceController">
+    <div class="col-md-6">
+        <h4>The service that is created from a <code>service</code> is a <code>new</code> instance of the function that you passed into the service configuration</h4>
+        <div hljs include="'../../servicesTopic/services/characterService.js'"></div>
+        <div hljs include="'../../servicesTopic/controllers/service.js'"></div>
+    </div>
+    <div class="col-md-6">
+        <div hljs include="'../../servicesTopic/templates/service.tpl.html'"></div>
+        <select ng-model="selectedCharacter" ng-options="character.name for character in characterService.characters"></select>
+        <div class="row">
+            <div class="col-md-12">
+                <img src="{{selectedCharacter.image}}">
+            </div>
+        </div>
+    </div>
+</section>

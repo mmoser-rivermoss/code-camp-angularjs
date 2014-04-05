@@ -1,0 +1,33 @@
+<section ng-controller="hierarchyController">
+    <h3>Scope Hierarchy</h3>
+    <p>When the application is bootstrapped, the <code>$rootScope</code> is created. It is the parent of all the other scope instances.</p>
+    <ul>
+        <li><code>$rootScope</code>
+            <ul>
+                <li><code>scope001</code></li>
+                <li><code>scope002</code>
+                    <ul>
+                        <li><code>scope004</code></li>
+                        <li><code>scope005</code>
+                            <ul>
+                                <li><code>scope008</code></li>
+                                <li><code>scope009</code></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><code>scope003</code>
+                    <ul>
+                        <li><code>scope006</code></li>
+                        <li><code>scope007</code></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+    <p>
+        Scopes will have a parent-child relationship. <code>$scope</code> takes on prototypical inheritance, which means that if a property is
+        defined on the <code>$scope</code>, then it is seen by its children as long as a child somewhere along the way doesn't redefine it.
+    </p>
+</section>
