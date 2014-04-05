@@ -3,20 +3,20 @@ angular.module('riverMoss.services-topic').controller('D3ExampleController', ['$
         var svg = d3.select("svg");
 
         var square = svg.append("rect")
-            .attr("x", 250)
+            .attr("x", 125)
             .attr("y", 200)
             .attr("width", 200)
             .attr("height", 200)
-            .style("fill", "#1d12b9")
+            .style("fill", "#12b91a")
             .style("stroke", "#000000")
-            .style("stroke-width", 4);
+            .style("stroke-width", 1);
 
         var circle = svg.append("circle")
-            .attr("cx", 350)
+            .attr("cx", 223)
             .attr("cy", 300)
             .attr("r", 85)
-            .style("fill", "#ff471e")
+            .style("fill", "#221eff")
             .style("stroke", "#000000")
-            .style("stroke-width", 5);
+            .style("stroke-width", 1);
     });
 }]);
